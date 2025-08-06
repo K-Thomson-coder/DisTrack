@@ -5,10 +5,10 @@ import psutil
 import pygetwindow as gw
 from pynput import keyboard
 
-LOG_INTERVAL = 60
-OUTPUT_CSV = "../data/raw_logs/activity_log.csv"
+LOG_INTERVAL = 300
+OUTPUT_CSV = "data/raw_logs/activity_log.csv"
 
-key_count =0
+key_count = 0
 
 def on_press(key) :
     global key_count 
@@ -31,7 +31,7 @@ def get_active_window() :
     except :
         return "Error"
     
-def colect_activity() :
+def collect_activity() :
     global key_count
     data = []
 
@@ -67,5 +67,5 @@ def colect_activity() :
 
 
 if __name__ == '__main__' :
-    colect_activity()
+    collect_activity()
 
