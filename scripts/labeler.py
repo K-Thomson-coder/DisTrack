@@ -23,8 +23,6 @@ def main() :
     st.title("Bulk Activity Labeler")
 
     df = load_all_data()
-    df_1 = df.copy()
-    length_data = len(df)
     
     if df.empty :
         st.warning("No data found to label.")
@@ -32,7 +30,11 @@ def main() :
 
     if os.path.exists(LABELED_DATA_PATH) and os.path.getsize(LABELED_DATA_PATH) > 0 :
         labeled_df = pd.read_csv(LABELED_DATA_PATH)
-        df = df[~df["timestamp"].isin(labeled_df['timestamp'])].reset_index(drop=True)
+        labeled_timestamp = set(labeled_df['timestamp'])
+        df = df[~df["timestamp"].isin(labeled_timestamp)].reset_index(drop=True)
+    
+    df_1 = df.copy()
+    length_data = len(df)
 
     if df.empty :
         st.success("All data has been labeled")

@@ -4,6 +4,7 @@ import pandas as pd
 import psutil
 import pygetwindow as gw
 from pynput import keyboard
+import os
 
 LOG_INTERVAL = 300
 OUTPUT_CSV = "data/raw_logs/activity_log.csv"
@@ -62,7 +63,8 @@ def collect_activity() :
     except KeyboardInterrupt :
         print("\n[Logger] Stopped. Saving data ....")
         df = pd.DataFrame(data)
-        df.to_csv(OUTPUT_CSV, index=False)
+        df = df.iloc[1:]
+        df.to_csv(OUTPUT_CSV, mode='a', header=not os.path.exists(OUTPUT_CSV),index=False)
         print(f"[Logger] Data saved to {OUTPUT_CSV}")
 
 
