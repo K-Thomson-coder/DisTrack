@@ -14,7 +14,6 @@ def load_all_data() :
     for file in os.listdir(RAW_DATA_PATH) :
         if file.endswith(".csv") :
             df = pd.read_csv(os.path.join(RAW_DATA_PATH, file))
-            df["source_file"] = file
             all_dfs.append(df)
 
     return pd.concat(all_dfs, ignore_index=True) if all_dfs else pd.DataFrame()
@@ -33,7 +32,6 @@ def main() :
         labeled_timestamp = set(labeled_df['timestamp'])
         df = df[~df["timestamp"].isin(labeled_timestamp)].reset_index(drop=True)
     
-    df_1 = df.copy()
     length_data = len(df)
 
     if df.empty :
@@ -53,7 +51,7 @@ def main() :
 
     start = st.session_state.page * CHUNK_SIZE
     end = min(start + CHUNK_SIZE, length_data)
-    chunk = df_1.iloc[start:end]
+    chunk = df.iloc[start:end]
 
     st.markdown(f"### Labeling Records {start + 1} to {min(end, length_data)} of {length_data}")
 
@@ -78,7 +76,7 @@ def main() :
             for i, row in chunk.iterrows() :
                 label = st.session_state.label.get(i, "")
                 if label :
-                    labeled.append({"timestamp": row['timestamp'], "active_window": row['active_window'], "source_file": row['source_file'], "label": label})
+                    labeled.append({'timestamp': row['timestamp'], 'hour': row['hour'], 'min': row['min'], "active_window": row['active_window'], 'keystrokes': row['keystrokes'], 'mouse_clicks': row['mouse_clicks'], "label": label})
             if labeled :
                 labeled_df = pd.DataFrame(labeled)
                 labeled_df.to_csv(LABELED_DATA_PATH, mode='a', index=False, header=not os.path.exists(LABELED_DATA_PATH) or os.path.getsize(LABELED_DATA_PATH) == 0)
