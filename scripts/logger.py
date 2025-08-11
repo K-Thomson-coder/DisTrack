@@ -78,6 +78,18 @@ def collect_activity() :
         print("\n[Logger] Stopped. Saving data ....")
         df = pd.DataFrame(data)
         df = df.iloc[1:]
+
+        if os.path.exists(OUTPUT_CSV) and os.path.getsize(OUTPUT_CSV) > 0 :
+            existing_df = pd.read_csv(OUTPUT_CSV)
+            if "sl_no" in existing_df.columns :
+                last_sl_no = existing_df["sl_no"].max()
+            else :
+                last_sl_no = 0
+        else :
+            last_sl_no = 0
+
+        df.insert(0, "sl_no", range(last_sl_no + 1, last_sl_no + 1 + len(df)))
+
         df.to_csv(OUTPUT_CSV, mode='a', header = os.path.getsize(OUTPUT_CSV) == 0, index=False)
         print(f"[Logger] Data saved to {OUTPUT_CSV}")
 
