@@ -6,7 +6,7 @@ from pynput import keyboard, mouse
 import os
 import ctypes
 
-LOG_INTERVAL = 300
+LOG_INTERVAL = 60
 OUTPUT_CSV = "data/raw_logs/activity_log.csv"
 
 key_count = 0
@@ -83,6 +83,10 @@ def collect_activity() :
             existing_df = pd.read_csv(OUTPUT_CSV)
             if "sl_no" in existing_df.columns :
                 last_sl_no = existing_df["sl_no"].max()
+                if pd.isna(last_sl_no) :
+                    last_sl_no = 0
+                else :
+                    last_sl_no = int(last_sl_no)
             else :
                 last_sl_no = 0
         else :
