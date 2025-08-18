@@ -1,0 +1,76 @@
+sl_no,timestamp,hour,min,active_window,keystrokes,mouse_clicks,idle__time_sec,label
+1,2025-08-17 20:39:00,20,39,C:\Windows\system32\cmd.exe - python  scripts\logger.py,0,0,0.578,Neutral
+2,2025-08-17 20:40:00,20,40,python.docx - Word,0,4,45.094,Neutral
+3,2025-08-17 20:41:00,20,41,python.docx - Word,0,0,105.094,Neutral
+4,2025-08-17 20:42:00,20,42,python.docx - Word,0,0,165.11,Neutral
+5,2025-08-17 20:43:00,20,43,configs - File Explorer,0,6,0.688,Neutral
+6,2025-08-17 20:44:00,20,44,configs - File Explorer,0,0,59.313,Neutral
+7,2025-08-17 20:45:00,20,45,requirements.txt - Notepad,0,6,8.328,Neutral
+8,2025-08-17 20:46:00,20,46,requirements.txt - Notepad,0,0,68.328,Neutral
+9,2025-08-17 20:47:00,20,47,Image.ipynb - ...\Users\RICKY,0,14,16.735,Neutral
+10,2025-08-17 20:48:00,20,48,Image.ipynb - ...\Users\RICKY,0,0,76.75,Neutral
+11,2025-08-17 20:49:00,20,49,Image.ipynb - ...\Users\RICKY,0,0,136.75,Neutral
+12,2025-08-17 20:50:00,20,50,Image.ipynb - ...\Users\RICKY,0,0,196.75,Neutral
+13,2025-08-17 20:51:00,20,51,WhatsApp,0,7,29.828,Neutral
+14,2025-08-17 20:52:00,20,52,WhatsApp,0,0,89.828,Neutral
+15,2025-08-17 20:53:00,20,53,User Accounts,8,6,0.14,Neutral
+16,2025-08-17 20:54:00,20,54,User Accounts,0,2,50.062,Neutral
+17,2025-08-17 20:55:00,20,55,User Accounts,0,0,110.078,Neutral
+18,2025-08-17 20:56:00,20,56,Wikipedia - Google Chrome,4,6,0.0,Neutral
+19,2025-08-17 20:57:00,20,57,Wikimedia Commons - Google Chrome,0,7,45.094,Neutral
+20,2025-08-17 20:58:00,20,58,Wikinews - Google Chrome,0,2,25.844,Neutral
+21,2025-08-17 20:59:00,20,59,Wikinews - Google Chrome,0,0,5.281,Neutral
+22,2025-08-17 21:00:00,21,0,Wikifunctions - Google Chrome,0,4,49.312,Neutral
+23,2025-08-17 21:01:00,21,1,Wikifunctions - Google Chrome,0,0,109.312,Neutral
+24,2025-08-17 21:02:00,21,2,Wikisource - Google Chrome,0,3,13.36,Neutral
+25,2025-08-17 21:03:00,21,3,Wikisource - Google Chrome,0,0,73.36,Neutral
+26,2025-08-17 21:04:00,21,4,Wikisource - Google Chrome,0,0,133.36,Neutral
+27,2025-08-17 21:05:00,21,5,Neutral activities explanation - Google Chrome,0,10,6.922,Neutral
+28,2025-08-17 21:06:00,21,6,Neutral activities explanation - Google Chrome,0,0,66.922,Neutral
+29,2025-08-17 21:07:00,21,7,CSV empty data error - Google Chrome,0,1,21.735,Neutral
+30,2025-08-17 21:08:00,21,8,CSV empty data error - Google Chrome,0,0,0.015,Neutral
+31,2025-08-17 21:09:00,21,9,KeyError troubleshooting - Google Chrome,0,1,50.641,Neutral
+32,2025-08-17 21:10:00,21,10,KeyError troubleshooting - Google Chrome,0,0,110.641,Neutral
+33,2025-08-17 21:11:00,21,11,Inbox (743) - rickythomthin@gmail.com - Gmail - Google Chrome,6,7,0.0,Neutral
+34,2025-08-17 21:12:00,21,12,E-Bill for JioFiber connection having JioFixedVoice Number 9138xxxxx635 - rickythomthin@gmail.com - Gmail - Google Chrome,0,1,21.938,Neutral
+35,2025-08-17 21:13:00,21,13,E-Bill for JioFiber connection having JioFixedVoice Number 9138xxxxx635 - rickythomthin@gmail.com - Gmail - Google Chrome,0,3,21.313,Neutral
+36,2025-08-17 21:14:00,21,14,E-Bill for JioFiber connection having JioFixedVoice Number 9138xxxxx635 - rickythomthin@gmail.com - Gmail - Google Chrome,0,0,81.313,Neutral
+37,2025-08-17 21:15:00,21,15,E-Bill for JioFiber connection having JioFixedVoice Number 9138xxxxx635 - rickythomthin@gmail.com - Gmail - Google Chrome,0,0,141.329,Neutral
+38,2025-08-17 21:16:00,21,16,Program Manager,0,8,0.672,Neutral
+39,2025-08-17 21:17:00,21,17,Settings,0,6,23.906,Neutral
+40,2025-08-17 21:18:00,21,18,Settings,0,0,50.765,Neutral
+41,2025-08-17 21:19:00,21,19,Settings,0,0,110.765,Neutral
+42,2025-08-17 21:20:00,21,20,[GitHub] Please verify your device - rickythomthin@gmail.com - Gmail - Google Chrome,0,9,10.735,Neutral
+43,2025-08-17 21:21:00,21,21,,2,14,0.078,Neutral
+44,2025-08-17 21:38:31,21,38,C:\Windows\system32\cmd.exe - python  scripts\logger.py,0,0,5.312,Neutral
+45,2025-08-17 21:39:31,21,39,K-Thomson-coder/Noise_Detection_using_ML - Google Chrome,0,4,46.078,Neutral
+46,2025-08-17 21:40:31,21,40,Inbox (742) - rickythomthin@gmail.com - Gmail - Google Chrome,0,6,0.094,Neutral
+47,2025-08-17 21:41:31,21,41,Assessment Link (Bootcamp - Big Data & Data Science) Batch-7 - rickythomthin@gmail.com - Gmail - Google Chrome,0,1,54.672,Neutral
+48,2025-08-17 21:42:31,21,42,Assessment Link (Bootcamp - Big Data & Data Science) Batch-7 - rickythomthin@gmail.com - Gmail - Google Chrome,0,0,114.672,Neutral
+49,2025-08-17 21:43:31,21,43,Assessment Link (Bootcamp - Big Data & Data Science) Batch-7 - rickythomthin@gmail.com - Gmail - Google Chrome,0,0,174.672,Neutral
+50,2025-08-17 21:44:31,21,44,Your student status has been verified - rickythomthin@gmail.com - Gmail - Google Chrome,0,2,21.172,Neutral
+51,2025-08-17 21:45:31,21,45,Your student status has been verified - rickythomthin@gmail.com - Gmail - Google Chrome,0,0,81.172,Neutral
+52,2025-08-17 21:46:31,21,46,Your student status has been verified - rickythomthin@gmail.com - Gmail - Google Chrome,0,0,141.172,Neutral
+53,2025-08-17 21:47:31,21,47,Invitation to participate in the Emerging Tech Internship opportunity offered by Internshala on National Internship Portal- reg. - rickythomthin@gmail.com - Gmail - Google Chrome,0,2,18.297,Neutral
+54,2025-08-17 21:48:31,21,48,Invitation to participate in the Emerging Tech Internship opportunity offered by Internshala on National Internship Portal- reg. - rickythomthin@gmail.com - Gmail - Google Chrome,0,0,78.297,Neutral
+55,2025-08-17 21:49:31,21,49,Invitation to participate in the Emerging Tech Internship opportunity offered by Internshala on National Internship Portal- reg. - rickythomthin@gmail.com - Gmail - Google Chrome,0,0,138.297,Neutral
+56,2025-08-17 21:50:31,21,50,Invitation to participate in the Emerging Tech Internship opportunity offered by Internshala on National Internship Portal- reg. - rickythomthin@gmail.com - Gmail - Google Chrome,0,0,198.313,Neutral
+57,2025-08-17 21:51:31,21,51,Invitation to participate in the Emerging Tech Internship opportunity offered by Internshala on National Internship Portal- reg. - rickythomthin@gmail.com - Gmail - Google Chrome,0,0,258.313,Neutral
+58,2025-08-17 21:52:31,21,52,Google Maps annual reminder - rickythomthin@gmail.com - Gmail - Google Chrome,0,3,45.047,Neutral
+59,2025-08-17 21:53:31,21,53,Google Maps annual reminder - rickythomthin@gmail.com - Gmail - Google Chrome,0,0,105.047,Neutral
+60,2025-08-17 21:54:31,21,54,Google Maps annual reminder - rickythomthin@gmail.com - Gmail - Google Chrome,0,0,165.047,Neutral
+61,2025-08-17 21:55:31,21,55,New login to Instagram from Instagram on moto g32 - rickythomthin@gmail.com - Gmail - Google Chrome,0,2,1.516,Neutral
+62,2025-08-17 21:56:31,21,56,New login to Instagram from Instagram on moto g32 - rickythomthin@gmail.com - Gmail - Google Chrome,0,2,42.141,Neutral
+63,2025-08-17 21:57:31,21,57,New login to Instagram from Instagram on moto g32 - rickythomthin@gmail.com - Gmail - Google Chrome,0,0,102.141,Neutral
+64,2025-08-17 21:58:31,21,58,New login to Instagram from Instagram on moto g32 - rickythomthin@gmail.com - Gmail - Google Chrome,0,0,162.141,Neutral
+65,2025-08-17 21:59:31,21,59,Settings,1,2,42.282,Neutral
+66,2025-08-17 22:00:31,22,0,Settings,0,0,102.282,Neutral
+67,2025-08-17 22:01:31,22,1,Settings,0,0,162.282,Neutral
+68,2025-08-17 22:02:31,22,2,Settings,0,0,222.297,Neutral
+69,2025-08-17 22:03:31,22,3,Home - File Explorer,0,3,0.453,Neutral
+70,2025-08-17 22:04:31,22,4,National Scholarships Portal 2.0.pdf - Personal - Microsoft​ Edge,0,6,41.797,Neutral
+71,2025-08-17 22:05:31,22,5,National Scholarships Portal 2.0.pdf - Personal - Microsoft​ Edge,0,0,101.844,Neutral
+72,2025-08-17 22:06:31,22,6,National Scholarships Portal 2.0.pdf - Personal - Microsoft​ Edge,0,0,161.844,Neutral
+73,2025-08-17 22:07:31,22,7,National Scholarships Portal 2.0.pdf - Personal - Microsoft​ Edge,0,0,0.0,Neutral
+74,2025-08-17 22:08:31,22,8,Untitled-1.md - DisTrack - Visual Studio Code,0,6,44.969,Neutral
+75,2025-08-17 22:09:31,22,9,Untitled-1.md - DisTrack - Visual Studio Code,0,0,104.969,Neutral

@@ -5,7 +5,6 @@ import os
 
 RAW_DATA_PATH = os.path.join("data", "raw_logs")
 LABELED_DATA_PATH = os.path.join("data", "labeled_logs.csv")
-CHUNK_SIZE = 5
 
 def load_all_data() :
     if not os.path.exists(RAW_DATA_PATH) :
@@ -42,11 +41,10 @@ def main() :
         st.success("All data has been labeled")
         return
 
-    total_records = df["sl_no"].max()
-
+    CHUNK_SIZE = 5
     if "page" not in st.session_state :
         st.session_state.page = 0
-    if "label" not in st.session_state :
+    if "labels" not in st.session_state :
         st.session_state.label = {}
 
     max_page = math.ceil(st.session_state.length_data / CHUNK_SIZE) - 1
@@ -63,7 +61,7 @@ def main() :
     for idx, (row_index, row) in enumerate(chunk.iterrows()) :
             record_number = start + idx
             label_key = f'label_{record_number}'
-            with st.expander(f"Record {record_number + 1} : {row['active_window'][:50]}") :
+            with st.expander(f"Record {record_number + 1} : {str(row['active_window'])[:50]}") :
                 st.code(f"Time : {row['timestamp']}\nWindow : {row['active_window']}", language='text')
                 
                 if label_key not in st.session_state :
@@ -94,6 +92,10 @@ def main() :
                 sorted_df = sorted_df.sort_values(by='sl_no')
                 sorted_df.to_csv(LABELED_DATA_PATH, index=False)
 
+
+                sorted_df = pd.read_csv(LABELED_DATA_PATH)
+                sorted_df = sorted_df.sort_values(by='sl_no')
+                sorted_df.to_csv(LABELED_DATA_PATH,index=False)
 
                 st.success(f"{len(labeled)} labels saved.")
             else :
