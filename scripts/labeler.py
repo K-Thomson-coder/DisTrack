@@ -87,6 +87,11 @@ def main() :
             if labeled :
                 labeled_df = pd.DataFrame(labeled)
                 labeled_df.to_csv(LABELED_DATA_PATH, mode='a', index=False, header=not os.path.exists(LABELED_DATA_PATH) or os.path.getsize(LABELED_DATA_PATH) == 0)
+                
+                sorted_df = pd.read_csv(LABELED_DATA_PATH)
+                sorted_df = sorted_df.sort_values(by='sl_no')
+                sorted_df.to_csv(LABELED_DATA_PATH, index=False)
+
 
                 sorted_df = pd.read_csv(LABELED_DATA_PATH)
                 sorted_df = sorted_df.sort_values(by='sl_no')
