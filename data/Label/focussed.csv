@@ -1,0 +1,67 @@
+focussed,1min 
+sl_no,timestamp,hour,min,active_window,keystrokes,mouse_clicks,idle__time_sec,label
+1,2025-08-11 19:02:43,19,2,labeler.py - DisTrack - Visual Studio Code,33,7,0.203,Focused
+2,2025-08-11 19:07:43,19,7,Streamlit bulk labeler - Brave,237,5,9.359,Focused
+3,2025-08-11 19:12:43,19,12,Streamlit bulk labeler - Brave,110,3,21.375,Focused
+4,2025-08-11 19:17:43,19,17,● labeler.py - DisTrack - Visual Studio Code,61,5,0.235,Focused
+5,2025-08-11 19:22:43,19,22,Streamlit bulk labeler - Brave,428,2,0.0,Focused
+6,2025-08-11 19:28:14,19,28,Streamlit bulk labeler - Brave,125,24,1.14,Focused
+7,2025-08-11 19:33:14,19,33,Streamlit bulk labeler - Brave,538,2,0.031,Focused
+8,2025-08-11 19:38:14,19,38,● labeler.py - DisTrack - Visual Studio Code,517,14,0.625,Focused
+9,2025-08-11 19:43:14,19,43,● labeler.py - DisTrack - Visual Studio Code,149,23,0.0,Focused
+10,2025-08-13 18:41:22,18,41,(24) Introduction to Data Structures & Algorithms - YouTube - Brave,0,7,4.141,Focused
+11,2025-08-13 18:42:22,18,42,(24) Introduction to Data Structures & Algorithms - YouTube - Brave,0,0,51.266,Focused
+12,2025-08-13 18:43:22,18,43,(24) Time Complexity and Big O Notation (with notes) - YouTube - Brave,0,1,0.125,Focused
+13,2025-08-13 18:44:22,18,44,(24) Time Complexity and Big O Notation (with notes) - YouTube - Brave,0,0,1.953,Focused
+14,2025-08-13 18:45:22,18,45,(24) 1. Introduction to C++ | Data Structures and Algorithms | College Placement Course | Lecture 1 - YouTube - Brave,0,1,3.735,Focused
+15,2025-08-13 18:46:22,18,46,(24) 1. Introduction to C++ | Data Structures and Algorithms | College Placement Course | Lecture 1 - YouTube - Brave,0,0,3.218,Focused
+16,2025-08-13 18:47:22,18,47,(24) Lecture 1 : Flowchart & Pseudocode + Installation | DSA Series by Shradha Khapra Ma'am | C++ - YouTube - Brave,0,1,0.046,Focused
+17,2025-08-13 18:48:22,18,48,(24) Lecture 1 : Flowchart & Pseudocode + Installation | DSA Series by Shradha Khapra Ma'am | C++ - YouTube - Brave,0,0,28.25,Focused
+18,2025-08-13 18:49:22,18,49,(24) Learn Coding & Get a Job (in 2025) 🔥 - YouTube - Brave,10,1,20.109,Focused
+19,2025-08-13 18:50:22,18,50,(24) Learn Coding & Get a Job (in 2025) 🔥 - YouTube - Brave,0,0,80.109,Focused
+20,2025-08-13 18:51:22,18,51,Untitled-1 - Project_ML - Visual Studio Code,0,8,0.0,Focused
+21,2025-08-13 18:52:22,18,52,"● n = int(input(""Enter a number:"")) • Untitled-1 - Project_ML - Visual Studio Code",92,0,0.062,Focused
+22,2025-08-13 18:53:22,18,53,Save As,88,1,0.015,Focused
+23,2025-08-13 18:54:22,18,54,Untitled-1.py - Project_ML - Visual Studio Code,11,10,0.016,Focused
+24,2025-08-13 18:55:22,18,55,Visual Studio Code,193,8,0.094,Focused
+25,2025-08-13 18:56:22,18,56,● Untitled-1.py - Project_ML - Visual Studio Code,229,3,3.266,Focused
+26,2025-08-13 18:57:22,18,57,● Untitled-1.py - Project_ML - Visual Studio Code,87,0,0.047,Focused
+27,2025-08-13 18:58:22,18,58,● Untitled-1.py - Project_ML - Visual Studio Code,80,0,10.078,Focused
+28,2025-08-13 18:59:22,18,59,Untitled-1 - Project_ML - Visual Studio Code,0,8,0.078,Focused
+29,2025-08-13 19:00:22,19,0,Untitled-1 - Project_ML - Visual Studio Code,265,0,0.687,Focused
+30,2025-08-13 19:01:22,19,1,Document1 - Word,33,6,0.156,Focused
+31,2025-08-13 19:02:22,19,2,Document1 - Word,163,0,0.063,Focused
+32,2025-08-13 19:03:22,19,3,Document1 - Word,143,0,2.875,Focused
+33,2025-08-13 19:04:22,19,4,Document1 - Word,135,0,0.328,Focused
+34,2025-08-13 19:05:22,19,5,Document1 - Word,32,0,48.703,Focused
+35,2025-08-13 19:06:22,19,6,Document1 - Word,0,0,108.703,Focused
+36,2025-08-13 19:07:22,19,7,Document1 - Word,0,0,43.125,Focused
+37,2025-08-13 19:08:22,19,8,Document1 - Word,81,0,1.547,Focused
+38,2025-08-13 19:09:22,19,9,Document1 - Word,77,0,0.016,Focused
+39,2025-08-13 19:10:22,19,10,Document2 - Word,293,8,0.0,Focused
+40,2025-08-13 19:11:22,19,11,Jupyter Notebook,186,6,0.016,Focused
+41,2025-08-13 19:12:22,19,12,• html project - index.html,82,7,0.641,Focused
+42,2025-08-13 19:13:22,19,13,• html project - index.html,98,2,0.594,Focused
+43,2025-08-13 19:14:22,19,14,• html project - index.html,301,7,0.031,Focused
+44,2025-08-13 19:15:22,19,15,• html project - index.html,140,0,0.344,Focused
+45,2025-08-13 19:16:22,19,16,• html project - index.html,156,0,0.109,Focused
+46,2025-08-13 19:17:22,19,17,• html project - index.html,46,7,0.047,Focused
+47,2025-08-13 19:18:22,19,18,Presentation1 - PowerPoint,28,15,0.5,Focused
+48,2025-08-13 19:19:22,19,19,Presentation1 - PowerPoint,45,0,51.797,Focused
+49,2025-08-13 19:20:22,19,20,Presentation1 - PowerPoint,78,0,0.047,Focused
+50,2025-08-13 19:21:22,19,21,Presentation1 - PowerPoint,359,0,0.063,Focused
+51,2025-08-13 19:22:22,19,22,Presentation1 - PowerPoint,169,0,0.063,Focused
+52,2025-08-13 19:23:22,19,23,Presentation1 - PowerPoint,402,0,0.016,Focused
+53,2025-08-13 19:24:22,19,24,Presentation1 - PowerPoint,317,0,0.047,Focused
+54,2025-08-13 19:25:22,19,25,Presentation1 - PowerPoint,212,0,10.141,Focused
+55,2025-08-13 19:26:22,19,26,Presentation1 - PowerPoint,0,0,70.141,Focused
+56,2025-08-13 19:27:22,19,27,Presentation1 - PowerPoint,0,0,130.141,Focused
+57,2025-08-13 19:28:22,19,28,Presentation1 - PowerPoint,0,0,190.141,Focused
+58,2025-08-13 19:29:22,19,29,Anaconda Navigator,0,5,0.015,Focused
+59,2025-08-13 19:30:22,19,30,Home - Personal - Microsoft​ Edge,0,3,9.781,Focused
+60,2025-08-13 19:31:22,19,31,Untitled2 and 1 more page - Personal - Microsoft​ Edge,1,10,0.125,Focused
+61,2025-08-13 19:32:22,19,32,Untitled2 and 1 more page - Personal - Microsoft​ Edge,50,0,3.578,Focused
+62,2025-08-13 19:33:22,19,33,Untitled2 and 1 more page - Personal - Microsoft​ Edge,0,0,63.578,Focused
+63,2025-08-13 19:34:22,19,34,Untitled2 and 1 more page - Personal - Microsoft​ Edge,0,0,123.578,Focused
+64,2025-08-13 19:35:22,19,35,Untitled2 and 1 more page - Personal - Microsoft​ Edge,0,0,183.578,Focused
+
