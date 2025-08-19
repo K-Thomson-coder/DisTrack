@@ -4,19 +4,20 @@ sl_no,timestamp,hour,min,active_window,keystrokes,mouse_clicks,idle__time_sec,la
 3,2025-08-17 22:45:40,22,45,Irisflowerclassification.ipynb - ...\RICKY\Downloads,0,3,292.156,Neutral
 4,2025-08-17 22:50:40,22,50,Settings,0,7,165.515,Neutral
 5,2025-08-17 22:55:40,22,55,Ricky-123497 - Google Chrome,0,12,60.093,Neutral
-11,2025-08-17 23:25:40,23,25,CSV empty data error - Google Chrome,0,3,67.344,Neutral
-12,2025-08-17 23:30:40,23,30,National Scholarships Portal 2.0.pdf - Personal - Microsoft​ Edge,0,5,36.704,Neutral
-13,2025-08-17 23:35:40,23,35,Wikipedia and 2 more pages - Personal - Microsoft​ Edge,4,8,38.36,Neutral
-14,2025-08-17 23:40:40,23,40,Wikimedia Commons - Personal - Microsoft​ Edge,1,7,158.015,Neutral
-15,2025-08-17 23:45:40,23,45,"Wikispecies, free species directory - Personal - Microsoft​ Edge",0,7,147.937,Neutral
-21,2025-08-18 00:15:40,0,15,Unikonta - Wikispecies - Personal - Microsoft​ Edge,0,3,137.141,Neutral
-16,2025-08-17 23:50:40,23,50,Archaea - Wikispecies - Personal - Microsoft​ Edge,0,1,120.5,Neutral
-17,2025-08-17 23:55:40,23,55,Asgardarchaeota - Wikispecies - Personal - Microsoft​ Edge,0,1,74.297,Neutral
-18,2025-08-18 00:00:40,0,0,Freyarchaeia - Wikispecies - Personal - Microsoft​ Edge,0,4,198.25,Neutral
-19,2025-08-18 00:05:40,0,5,Neomura - Wikispecies - Personal - Microsoft​ Edge,0,12,218.469,Neutral
-20,2025-08-18 00:10:40,0,10,Animalia - Wikispecies - Personal - Microsoft​ Edge,0,2,17.156,Neutral
 6,2025-08-17 23:00:40,23,0,ChatGPT - Google Chrome,0,4,78.922,Neutral
 7,2025-08-17 23:05:40,23,5,New login to Instagram from Chrome on Windows - rickythomthin@gmail.com - Gmail - Google Chrome,0,5,35.938,Neutral
 8,2025-08-17 23:10:40,23,10,New login to Instagram from Chrome on Windows - rickythomthin@gmail.com - Gmail - Google Chrome,0,0,335.938,Neutral
 9,2025-08-17 23:15:40,23,15,Hackathon Launch: The Gemma 3n Impact Challenge - rickythomthin@gmail.com - Gmail - Google Chrome,0,2,43.828,Neutral
 10,2025-08-17 23:20:40,23,20,Google Maps annual reminder - rickythomthin@gmail.com - Gmail - Google Chrome,0,4,165.641,Neutral
+11,2025-08-17 23:25:40,23,25,CSV empty data error - Google Chrome,0,3,67.344,Neutral
+12,2025-08-17 23:30:40,23,30,National Scholarships Portal 2.0.pdf - Personal - Microsoft​ Edge,0,5,36.704,Neutral
+13,2025-08-17 23:35:40,23,35,Wikipedia and 2 more pages - Personal - Microsoft​ Edge,4,8,38.36,Neutral
+14,2025-08-17 23:40:40,23,40,Wikimedia Commons - Personal - Microsoft​ Edge,1,7,158.015,Neutral
+15,2025-08-17 23:45:40,23,45,"Wikispecies, free species directory - Personal - Microsoft​ Edge",0,7,147.937,Neutral
+16,2025-08-17 23:50:40,23,50,Archaea - Wikispecies - Personal - Microsoft​ Edge,0,1,120.5,Neutral
+17,2025-08-17 23:55:40,23,55,Asgardarchaeota - Wikispecies - Personal - Microsoft​ Edge,0,1,74.297,Neutral
+18,2025-08-18 00:00:40,0,0,Freyarchaeia - Wikispecies - Personal - Microsoft​ Edge,0,4,198.25,Neutral
+19,2025-08-18 00:05:40,0,5,Neomura - Wikispecies - Personal - Microsoft​ Edge,0,12,218.469,Neutral
+20,2025-08-18 00:10:40,0,10,Animalia - Wikispecies - Personal - Microsoft​ Edge,0,2,17.156,Neutral
+21,2025-08-18 00:15:40,0,15,Unikonta - Wikispecies - Personal - Microsoft​ Edge,0,3,137.141,Neutral
+22,2025-08-19 10:36:50,10,36,C:\Windows\system32\cmd.exe - python  scripts\logger.py,0,0,0.062,Neutral
