@@ -1,15 +1,17 @@
 import streamlit as st
 import datetime
 import pandas as pd
-import numpy as np
 import pygetwindow as gw
 import ctypes
 import time
+import base64
 from pynput import keyboard, mouse
-from utils.helper import load_file
+from utils.helper import load_file, cleaner
 
 pipeline = load_file("model/pipeline.pkl")
 labels = {0 : "Focused", 1 : "Neutral", 2 : "Distracted"}
+with open("data/sound_effect/DisTrack-alert-1.wav", 'rb') as f :
+    alert_audio = f.read()
 
 key_count = 0
 mouse_clicks = 0
@@ -47,6 +49,15 @@ def get_active_window() :
 def data_prediction(df) :
     return pipeline.predict(df)[0]
 
+def alert() :
+    b64 = base64.b64encode(alert_audio).decode()
+    audio_html = f"""
+        <audio autoplay="true" style="display:none" >
+            <source src="data:audio/wav;base64,{b64}" type="audio/wav">
+        </audio>
+    """
+    st.markdown(audio_html, unsafe_allow_html=True)
+
 def collect_data() :
     global key_count, mouse_clicks
 
@@ -56,7 +67,7 @@ def collect_data() :
     mouse_listener.start()
 
     while st.session_state.status :
-        time.sleep(30)
+        time.sleep(60)
 
         now = datetime.datetime.now()
         timestamp = now.strftime('%Y-%m-%d %H:%M:%S')
@@ -73,7 +84,7 @@ def collect_data() :
 
         if row :
             features = {
-                'active_window' : active_window,
+                'active_window' : cleaner(active_window),
                 'keystrokes' : key_count,
                 'mouse_clicks' : mouse_clicks,
                 'idle_time_sec' : idle_time,
@@ -89,22 +100,28 @@ def collect_data() :
             df_temp = pd.DataFrame([features])
             pred = data_prediction(df_temp)
 
+            key_count, mouse_clicks = 0, 0
+
             row['label'] = labels[int(pred)]
             st.session_state.data.append(row)
             return pred
+        
+        key_count, mouse_clicks = 0, 0
+        
         return None
 
 
 st.set_page_config(page_title = "DisTrack", layout = "wide", page_icon='🧠')
 st.title("Distraction Alert 🥴")
-
-col1, col2 = st.columns(2)
-if col1.button("▶ Start") :
-    st.session_state.status = 'running'
-    st.success("started monitoring")
-if col2.button("⏸ Stop") :
-    st.session_state.status = 'stopped'
-    st.warning("status stopped.")
+col_a, col_b, col_c = st.columns(3)
+if col_b :
+    col1, col2 = st.columns(2)
+    if col1.button("▶ Start") :
+        st.session_state.status = 'running'
+        st.success("started monitoring")
+    if col2.button("⏸ Stop") :
+        st.session_state.status = 'stopped'
+        st.warning("status stopped.")
 
 placeholder = st.empty()
 
@@ -116,9 +133,8 @@ if st.session_state.status == 'running' :
         if pred == 2 :
             distracted_count += 1
             if distracted_count >= 2 :
-                st.error("⚠ ALERT: Distraction Detected.")
-                st.snow()
-                distracted_count = 0
+                alert()
+                # distracted_count = 0
         else :
             distracted_count = 0
 
