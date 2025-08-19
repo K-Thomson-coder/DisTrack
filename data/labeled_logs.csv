@@ -1,4 +1,4 @@
-sl_no,timestamp,hour,min,active_window,keystrokes,mouse_clicks,idle__time_sec,label
+sl_no,timestamp,hour,min,active_window,keystrokes,mouse_clicks,idle_time_sec,label
 1,2025-08-17 22:28:58,22,28,C:\Windows\system32\cmd.exe - python  scripts\logger.py,0,0,0.375,Neutral
 2,2025-08-17 22:40:40,22,40,C:\Windows\system32\cmd.exe - python  scripts\logger.py,0,0,2.453,Neutral
 3,2025-08-17 22:45:40,22,45,Irisflowerclassification.ipynb - ...\RICKY\Downloads,0,3,292.156,Neutral
