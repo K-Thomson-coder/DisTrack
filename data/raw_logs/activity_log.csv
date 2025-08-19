@@ -20,4 +20,7 @@ sl_no,timestamp,hour,min,active_window,keystrokes,mouse_clicks,idle_time_sec,lab
 19,2025-08-18 00:05:40,0,5,Neomura - Wikispecies - Personal - Microsoft​ Edge,0,12,218.469,
 20,2025-08-18 00:10:40,0,10,Animalia - Wikispecies - Personal - Microsoft​ Edge,0,2,17.156,
 21,2025-08-18 00:15:40,0,15,Unikonta - Wikispecies - Personal - Microsoft​ Edge,0,3,137.141,
+<<<<<<< HEAD
 22,2025-08-19 10:36:50,10,36,C:\Windows\system32\cmd.exe - python  scripts\logger.py,0,0,0.062,
+=======
+>>>>>>> ad2cc5f4b977077bd35665078b7f71d30759b1d3
