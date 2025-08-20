@@ -102,7 +102,7 @@ def collect_data() :
 
             key_count, mouse_clicks = 0, 0
 
-            row['label'] = labels[int(pred)]
+            row['Focus_level'] = labels[int(pred)]
             st.session_state.data.append(row)
             return pred
         
@@ -112,18 +112,31 @@ def collect_data() :
 
 
 st.set_page_config(page_title = "DisTrack", layout = "wide", page_icon='🧠')
-st.title("Distraction Alert 🥴")
-col_a, col_b, col_c = st.columns(3)
-if col_b :
-    col1, col2 = st.columns(2)
-    if col1.button("▶ Start") :
-        st.session_state.status = 'running'
-        st.success("started monitoring")
-    if col2.button("⏸ Stop") :
-        st.session_state.status = 'stopped'
-        st.warning("status stopped.")
+st.markdown("<h1 style='text-align: center;'>Distraction Alert</h1>", unsafe_allow_html = True)
 
-placeholder = st.empty()
+col_a, col_b, col_c = st.columns([1, 1, 1])
+with col_b :
+    with st.expander("Control Panel", expanded = True) :
+        col1, col2 = st.columns(2)
+        with col1 :
+            if st.button("▶ Start") :
+                st.session_state.status = 'running'
+        
+            if st.button("⏸ Pause") :
+                st.session_state.status = 'stopped'
+        
+        with col2 :
+            st.write("Status : ")
+        
+            if st.session_state.status == 'running' :
+                st.success("Monitoring")
+            else :
+                st.warning("Stopped")
+
+col11, col22, col33 = st.columns([1, 4, 1])
+with col22 :
+    with st.expander(" The collected data will be shown here ") :
+        placeholder = st.empty()
 
 if st.session_state.status == 'running' :
     distracted_count = 0
@@ -134,40 +147,8 @@ if st.session_state.status == 'running' :
             distracted_count += 1
             if distracted_count >= 2 :
                 alert()
-                # distracted_count = 0
         else :
             distracted_count = 0
 
         df_logs = pd.DataFrame(st.session_state.data)
         placeholder.dataframe(df_logs, use_container_width = True)
-
-
-# if st.button("⏸ Stop status") :
-#     st.session_state.status = False
-#     st.warning("status stopped.")
-
-# if st.button("🔄 Continue status") :
-#     if not st.session_state.status :
-#         st.session_state.status = True
-#         threading.Thread(target=collect_data, daemon=True).start()
-#         st.info("status resumed.")
-
-# if st.button("Export Data to CSV") :
-#     if st.session_state.data :
-#         df_export = pd.DataFrame(st.session_state.data)
-#         csv_data = df_export.to_csv(index = False).encode('utf-8')
-
-#         st.download_button(
-#             label="Download Data as CSV", 
-#             data = csv_data, file_name = f"activity_log_{datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}.csv",
-#             mime = ('text/csv')
-#         )
-#     else :
-#         st.warning("No data to export yet.")
-
-# st.subheader("Your Data")
-# if st.session_state.data :
-#     df_display = pd.DataFrame(st.session_state.data)
-#     st.dataframe(df_display)
-# else :
-#     st.info("No data collected yet.")
