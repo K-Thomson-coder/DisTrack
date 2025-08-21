@@ -25,6 +25,9 @@ def cleaner(string) :
     tmp = _remove_numbers_(tmp)
     tmp = _remove_punctuation_(tmp)
     return tmp
+
+def sparse_to_dense(x):
+    return x.toarray()
     
 def main() :
     pass

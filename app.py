@@ -6,9 +6,9 @@ import ctypes
 import time
 import base64
 from pynput import keyboard, mouse
-from utils.helper import load_file, cleaner
+from utils.helper import load_file, cleaner, sparse_to_dense
 
-pipeline = load_file("model/pipeline.pkl")
+pipeline = load_file("model/NaiveBayes/pipeline.pkl")
 labels = {0 : "Focused", 1 : "Neutral", 2 : "Distracted"}
 with open("data/sound_effect/DisTrack-alert-1.wav", 'rb') as f :
     alert_audio = f.read()
