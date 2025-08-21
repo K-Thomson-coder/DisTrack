@@ -6,7 +6,7 @@ from pynput import keyboard, mouse
 import os
 import ctypes
 
-LOG_INTERVAL = 300  # seconds
+LOG_INTERVAL = 30  # seconds
 OUTPUT_CSV = "data/raw_logs/activity_log.csv"
 
 key_count = 0
@@ -102,7 +102,7 @@ def collect_activity():
             last_sl_no = 0
 
         # Insert sl_no column
-        df.insert(0, "sl_no", range(int(last_sl_no) + 1, int(last_sl_no) + 1 + len(df)))
+        df.insert(0, "sl_no", range(last_sl_no + 1, last_sl_no + 1 + len(df)))
 
         # Save to CSV (append if exists)
         df.to_csv(OUTPUT_CSV, mode='a', header=os.path.getsize(OUTPUT_CSV) == 0, index=False)
