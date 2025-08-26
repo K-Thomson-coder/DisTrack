@@ -145,8 +145,8 @@ Visualizations:
 ## # How to Run
 Clone the repository and install dependencies:
 ```bash
-git clone https://github.com/K-Thomson-coder/DisTrack-A-Machine-Learning-Approach-to-Detecting-User-Distraction-from-Desktop-Activity.git
-cd DisTrack-A-Machine-Learning-Approach-to-Detecting-User-Distraction-from-Desktop-Activity
+git clone https://github.com/K-Thomson-coder/DisTrack.git
+cd DisTrack
 pip install -r requirements.txt
 ```
 ### Demo application
@@ -163,6 +163,7 @@ streamlit run app.py
 - Python
 - scikit-learn
 - pandas, numpy
+- streamlit
 
 For the full list of dependencies and versions, see [`requirements.txt`](requirements.txt).
 
